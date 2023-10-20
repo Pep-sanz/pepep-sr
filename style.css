@@ -122,7 +122,6 @@ body {
   font-family: "Poppins", sans-serif;
   white-space: nowrap;
   overflow: hidden;
-  border-right: 1px solid black;
   padding-right: 5px;
   margin-bottom: 1rem;
   width: 300px;
@@ -224,6 +223,19 @@ body {
     margin: 0 auto;
   }
 
+  .home .wrapper-text h1 {
+    font-size: 2.5rem !important;
+  }
+  
+  .home .wrapper-text #typewriter-text {
+    width: 250px !important;
+    height: 50px !important;
+  }
+  
+  .home .wrapper-text .sosmed {
+    font-size: 2.5rem;
+  }
+
   .home .profil img {
     width: 400px !important;
     height: 400px !important;
@@ -283,6 +295,11 @@ body {
     width: 300px;
     height: 200px;
     margin-top: 2rem;
+  }
+
+  .home .wrapper-text #typewriter-text {
+    font-size: 1.5rem;
+    width: 200px !important;
   }
 
   .home .profil img {
@@ -394,6 +411,7 @@ ul.slide {
   font-size: 1.5rem;
   width: 180px;
   height: 50px;
+  margin-bottom: .5em;
 }
 
 .home .wrapper-text .sosmed {
