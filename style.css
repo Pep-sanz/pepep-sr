@@ -36,6 +36,7 @@ body {
   height: 60px;
   border-radius: 30px;
   box-shadow: var(---box-shadow);
+  z-index: 100;
 }
 
 .container-navbar .logo {
@@ -109,7 +110,7 @@ body {
   flex-direction: column;
   font-family: "Poppins", sans-serif;
 }
-.home .wrapper-text h3{
+.home .wrapper-text h3 {
   font-size: 1.5rem;
 }
 
@@ -204,7 +205,9 @@ body {
   .home {
     flex-direction: row !important;
     justify-content: space-between !important;
-    min-width: 80%;
+    min-width: 90%;
+    height: 100vh;
+    box-sizing: border-box;
   }
 
   .home .wrapper-text {
@@ -221,12 +224,12 @@ body {
     margin: 0 auto;
   }
 
-  .home .profil img{
+  .home .profil img {
     width: 400px !important;
     height: 400px !important;
   }
 
-  .home .profil div{
+  .home .profil div {
     font-size: 4rem !important;
     width: 100%;
     height: auto;
@@ -300,23 +303,24 @@ body {
   }
 
   .container-navbar .logo {
-    font-size: 1.7rem;
+    font-size: 2rem;
+    font-weight: 800 !important;
   }
 
   .container-navbar ul {
-    background-color: #eaeaea;
-    min-width: 70%;
+    background-color: #a7a7a7;
+    border-radius: 50px;
     position: absolute;
-    top: 0;
+    top: 80px;
     right: -100px;
-    height: 100vh;
-    width: 200px;
+    height: 60px;
+    width: 400px;
     display: flex;
-    justify-content: start;
-    flex-direction: column;
-    padding-top: 8rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
     gap: 5rem;
-    transform: translatex(100%);
+    transform: translatey(-300%);
     transition: all 1s;
     z-index: 1;
     opacity: 0;
@@ -325,10 +329,11 @@ body {
 
 ul.slide {
   opacity: 1;
-  transform: translatex(0);
+  transform: translatey(0);
 }
 .container-navbar div i#menu {
   display: block;
+  cursor: pointer;
 }
 
 .container-navbar ul .hamburger-menu {
@@ -341,6 +346,7 @@ ul.slide {
   height: 40px;
   padding: 10px;
   box-sizing: border-box;
+  transition: all 5s;
 }
 
 .container-navbar ul .hamburger-menu .in-hamburger {
@@ -378,6 +384,20 @@ ul.slide {
   width: 300px;
   height: 200px;
   margin-top: 2rem;
+}
+
+.home .wrapper-text h1 {
+  font-size: 1.8rem;
+}
+
+.home .wrapper-text #typewriter-text {
+  font-size: 1.5rem;
+  width: 180px;
+  height: 50px;
+}
+
+.home .wrapper-text .sosmed {
+  font-size: 2.5rem;
 }
 
 .home .profil img {

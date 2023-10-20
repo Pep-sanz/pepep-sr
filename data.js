@@ -2,7 +2,6 @@ const text = "FullStack web depelover";
 const typingSpeed = 100; // Kecepatan pengetikan (ms per karakter)
 const textContainer = document.getElementById("typewriter-text");
 
-
 function typeText() {
   let charIndex = 0;
   textContainer.innerHTML = ""; // Mengosongkan konten sebelum animasi berulang
@@ -29,8 +28,9 @@ const hamburger = document.getElementById("menu");
 const x = document.getElementById("x");
 hamburger.onclick = function () {
   slide.classList.toggle("slide");
+  hamburger.classList.toggle("fa-x",);
 };
 
-x.onclick = function () {
-  slide.classList.toggle("slide");
-};
+// x.onclick = function () {
+//   slide.classList.("");
+// };
